@@ -40,6 +40,7 @@
     display: flex;
     align-items: center;
     flex-direction: row;
+    gap: 10px;
 }
 
 .input .input-text {
@@ -52,7 +53,15 @@
     color: white;
     padding: 10px;
     border-radius: 10px;
-    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+    border: 0;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
+    font-size: 0.8rem;
+}
+
+.input .btn:hover {
+    background-color: #4960d3;
 }
 
 .container .list {
