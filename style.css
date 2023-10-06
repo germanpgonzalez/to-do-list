@@ -45,7 +45,7 @@
 
 .input .input-text {
     background-color: white;
-    height: 30px;
+    height: 33px;
 }
 
 .input .btn {
@@ -64,11 +64,11 @@
     background-color: #4960d3;
 }
 
-.container .list {
+.container .lista-tareas {
     margin-top: 30px;
 }
 
-.container .list li {
+.container .lista-tareas li {
     list-style: none;
     background-color: white;
     border-bottom: 1px solid #000;
@@ -79,7 +79,7 @@
     font-size: 1.2rem;
 }
 
-.list .tarea:hover {
+.lista-tareas .tarea:hover {
     background-color: #dfe4fa;
 }
 

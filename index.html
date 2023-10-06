@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>To Do List</title>
 </head>
+
 <body>
-    
+
     <navbar>
         <h1 class="title">To Do List</h1>
     </navbar>
@@ -20,26 +22,16 @@
 
         <form action="" class="input">
             <input type="text" class="input-text" id="input-text" placeholder="Ingrese la tarea"></input>
-            <input type="button" class="btn" id="btn-enviar"  value="Enviar">
-            <input type="button" class="btn" id="btn-limpiar" onclick="limpiar()" value="Limpiar">
+            <input type="submit" class="btn" id="btn-enviar" value="Enviar">
+            <input type="button" class="btn" id="btn-limpiar" value="Limpiar">
         </form>
 
-        <div class="list">
-            <div>
-                <ul>
-                    <li class="tarea">Salir a caminar</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li class="tarea">Lavar el auto</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li class="tarea">Estudiar JavaScript</li>
-                </ul>
-            </div>
+        <div class="lista-tareas">
+            <ul>
+                <li class="tarea">Salir a caminar</li>
+                <li class="tarea">Lavar el auto</li>
+                <li class="tarea">Estudiar JavaScript</li>
+            </ul>
         </div>
 
         <footer>
@@ -48,4 +40,5 @@
     </main>
     <script src="script.js"></script>
 </body>
+
 </html>
