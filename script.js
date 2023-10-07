@@ -6,6 +6,8 @@ const btnenviar = document.getElementById("btn-enviar");
 const input = document.getElementById("input-text");
 // Obtengo el div de donde se agregan las lista
 let lista = document.getElementsByClassName("lista-tareas");
+// Obtengo la lista desoredenada
+let items = document.getElementsByClassName("lista-items");
 
 // Le agrego la función al apretar el botón limpiar
 btnlimpiar.addEventListener("click", limpiar);
@@ -31,7 +33,7 @@ function agregarItem(event){
     console.log(newItem);
     newLi.appendChild(document.createTextNode(newItem));
     //Agrego el nuevo elemento a la lista de items
-    lista.appendChild(newLi);
+    items.appendChild(newLi);
 }
 
 
