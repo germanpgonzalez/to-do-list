@@ -6,6 +6,10 @@ const btnenviar = document.getElementById("btn-enviar");
 const input = document.getElementById("input-text");
 // Obtengo la lista de items
 const items = document.getElementById("items");
+// Obtengo el div de fecha
+const fechaDay = document.getElementById("fechaDay");
+const fechaMonth = document.getElementById("fechaMonth");
+const fechaYear = document.getElementById("fechaYear");
 
 // Le agrego la función al apretar el botón limpiar
 btnlimpiar.addEventListener("click", limpiar);
@@ -43,6 +47,9 @@ function agregarItem(evento){
 
     //Agrego el nuevo elemento creado a la lista de items
     items.appendChild(newLi);
+
+    //Llamo a la función limpiar para limpiar el input despues de agregar el item nuevo
+    limpiar();
 }
 
 
@@ -57,3 +64,18 @@ function eliminarItem(evento){
         }
     }
 }
+
+
+// Obtener fecha del sistema
+
+const fechaActual = new Date();
+fechaDay.innerText = fechaActual.getDate();
+
+// Creo un arreglo de meses para obtener el mes actual en string
+const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+// Obtengo el mes actual y le sumo 1 ya que los arreglos arrancan en 0
+const mesActual = fechaActual.getMonth() + 1;
+// Obtengo el mes actual en formato string y lo imprimo en pantalla
+fechaMonth.innerHTML = meses[mesActual];
+//Obtengo el año actual
+fechaYear.innerText = fechaActual.getFullYear();
