@@ -5,13 +5,14 @@ const btnenviar = document.getElementById("btn-enviar");
 // Obtengo el input para ingresar tareas
 const input = document.getElementById("input-text");
 // Obtengo la lista de items
-let items = document.getElementById("items");
-
+const items = document.getElementById("items");
 
 // Le agrego la función al apretar el botón limpiar
 btnlimpiar.addEventListener("click", limpiar);
 // Le agrego la función agregar item al botón enviar
 btnenviar.addEventListener("click",agregarItem);
+// Le agrego la función eliminar item al botón eliminar
+items.addEventListener("click", eliminarItem);
 
 
 
@@ -20,7 +21,7 @@ function limpiar(){
 }
 
 
-function agregarItem(event){
+function agregarItem(evento){
     event.preventDefault();
     //Obtengo el item ingresado
     newItem = input.value;
@@ -39,7 +40,19 @@ function agregarItem(event){
     btnDel.innerHTML = "x";
     //Agrego el botón al nuevo elemento Li
     newLi.appendChild(btnDel);
-    
+
     //Agrego el nuevo elemento creado a la lista de items
     items.appendChild(newLi);
+}
+
+
+function eliminarItem(evento){
+    if(evento.target.classList.contains("btn-eliminar")){
+        if(confirm("¿Desea eliminar este elemento?")){
+            //Busco el elemento padre del botón eliminar
+            let li = evento.target.parentElement;
+            //Remuevo el nodo y se borra el item
+            items.removeChild(li);
+        }
+    }
 }
