@@ -22,7 +22,7 @@ function limpiar(){
 
 
 function agregarItem(evento){
-    event.preventDefault();
+    evento.preventDefault();
     //Obtengo el item ingresado
     newItem = input.value;
     //Creo el nuevo li
@@ -47,6 +47,7 @@ function agregarItem(evento){
 
 
 function eliminarItem(evento){
+    // Me fijo en la lista el elemento que tenga la classe eliminar (el botón)
     if(evento.target.classList.contains("btn-eliminar")){
         if(confirm("¿Desea eliminar este elemento?")){
             //Busco el elemento padre del botón eliminar

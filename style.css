@@ -46,6 +46,7 @@
 .input .input-text {
     background-color: white;
     height: 33px;
+    outline: none;
 }
 
 .input .btn {
