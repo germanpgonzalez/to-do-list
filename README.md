@@ -8,4 +8,5 @@ La app esta realizada con las siguientes tecnologías 😉:
 - CSS
 - JavaScript
 
-[!image text](https://raw.githubusercontent.com/germanpgonzalez/to-do-list/master/assets/todolist.JPG)
+<image src="/assets/todolist.JPG" alt="todo-list">
+
