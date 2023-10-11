@@ -2,7 +2,7 @@
 #### To-do list
 
 To-Do list simple en el cual podes agregar tareas y eliminarlas. También te muestra el día, mes y año en el que estas usando la app.
-Esta realizado con las siguientes tecnologías 😉:
+La app esta realizada con las siguientes tecnologías 😉:
 
 - HTML
 - CSS
