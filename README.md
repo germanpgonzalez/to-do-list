@@ -8,5 +8,8 @@ La app esta realizada con las siguientes tecnologías 😉:
 - CSS
 - JavaScript
 
-<image src="/assets/todolist.JPG" alt="todo-list">
+<p aling="center">
+    <image src="/assets/todolist.JPG" alt="todo-list">
+</p>
+
 
