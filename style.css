@@ -12,7 +12,6 @@
 
 .fecha-container {
     background-color: white;
-    display: flex;
 }
 
 .fecha {
@@ -60,9 +59,6 @@
     margin: 0 auto;
     margin-top: 30px;
     background-color: white;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
     gap: 10px;
 }
 
@@ -77,7 +73,6 @@
     color: white;
     padding: 10px;
     border-radius: 10px;
-    display: inline-block;
     cursor: pointer;
     border: 0;
     box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.5);
