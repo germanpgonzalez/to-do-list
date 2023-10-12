@@ -28,16 +28,16 @@ function limpiar(){
 function agregarItem(evento){
     evento.preventDefault();
     //Obtengo el item ingresado
-    newItem = input.value;
+    const newItem = input.value;
     //Creo el nuevo li
-    let newLi = document.createElement('li');
+    const newLi = document.createElement('li');
     //Le asigno la clase al elemento li
     newLi.className = "tarea";
     //Le agrego el elemento ingresado por el input al li creado
     newLi.appendChild(document.createTextNode(newItem));
 
     //Creo el botón eliminar
-    let btnDel = document.createElement('button');
+    const btnDel = document.createElement('button');
     //Le agrego la clase al botón
     btnDel.className = "btn-eliminar";
     //Le agrego el texto al botón
@@ -58,7 +58,7 @@ function eliminarItem(evento){
     if(evento.target.classList.contains("btn-eliminar")){
         if(confirm("¿Desea eliminar este elemento?")){
             //Busco el elemento padre del botón eliminar
-            let li = evento.target.parentElement;
+            const li = evento.target.parentElement;
             //Remuevo el nodo y se borra el item
             items.removeChild(li);
         }
