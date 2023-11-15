@@ -74,7 +74,7 @@ fechaDay.innerText = fechaActual.getDate();
 // Creo un arreglo de meses para obtener el mes actual en string
 const meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
 // Obtengo el mes actual y le sumo 1 ya que los arreglos arrancan en 0
-const mesActual = fechaActual.getMonth() + 1;
+const mesActual = fechaActual.getMonth();
 // Obtengo el mes actual en formato string y lo imprimo en pantalla
 fechaMonth.innerHTML = meses[mesActual];
 //Obtengo el año actual
